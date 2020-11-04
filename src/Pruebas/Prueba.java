@@ -3,22 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Algoritmo1;
+package Pruebas;
 
-import static jdk.nashorn.internal.objects.Global.print;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Vanessa
  */
-public class Test {
+public class Prueba {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        Metodo1 x = new Metodo1();
-        x.Metodo();
+        Menu x = new Menu();
+        x.MenuProgramas();
     }
 
 }
