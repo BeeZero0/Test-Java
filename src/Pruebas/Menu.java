@@ -6,6 +6,7 @@
 package Pruebas;
 
 import Algoritmo1.Metodo1;
+import GuiCrud.MenuPrincipal;
 import Raccoon.GuiPrincipal;
 import javax.swing.JOptionPane;
 
@@ -23,6 +24,7 @@ public class Menu {
                 x.Metodo();
                 break;
             case 2:
+                JOptionPane.showMessageDialog(null,"Algoritmo no terminado a tiempo");
 
                 break;
             case 3:
@@ -30,6 +32,8 @@ public class Menu {
                 y.setVisible(true);
                 break;
             case 4:
+                MenuPrincipal z = new MenuPrincipal();
+                z.setVisible(true);
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "Seleccion incorrecta, por favor intente de nuevo.");

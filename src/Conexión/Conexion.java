@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Conexión;
+
+import com.mysql.jdbc.Connection;
+import java.sql.DriverManager;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Vanessa
+ */
+public class Conexion {
+    Connection conectar = null;
+    
+    public Connection conexion(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            conectar=(Connection) DriverManager.getConnection("jdbc:mysql://localhost/crud","root","");
+            
+            //JOptionPane.showMessageDialog(null,"Conexión Exitosa");
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error de conexón" + e.getMessage());
+        }
+        return conectar;
+    }
+}
