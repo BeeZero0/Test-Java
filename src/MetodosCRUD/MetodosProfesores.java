@@ -77,9 +77,9 @@ public class MetodosProfesores extends MetodosGenerales {
             pst.setString(2, ApellidosText.getText());
 
             int selec = AreaText.getSelectedIndex();
-            pst.setString(4, AreaText.getItemAt(selec));
+            pst.setString(3, AreaText.getItemAt(selec));
 
-            pst.setString(3, fil);
+            pst.setString(4, fil);
             pst.execute();
 
             JOptionPane.showMessageDialog(null, "Registro actualizado exitosamente");
